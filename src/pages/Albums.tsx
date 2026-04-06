@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ExternalLink, Image, ArrowRight } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
-import warMuseumOverloon from '@/assets/warmuseum-overloon-header.png';
+import warMuseumOverloon from '@/assets/VeldOorlogsMuseum-7668.jpg';
 
 const albums = [
   { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
