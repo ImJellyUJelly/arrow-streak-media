@@ -34,7 +34,6 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               {[
                 { label: 'Home', path: '/' },
-                { label: 'Tournaments', path: '/tournaments' },
                 { label: 'Services', path: '/services' },
                 { label: 'Albums', path: '/albums' },
                 { label: 'Contact', path: '/contact' },
@@ -50,13 +49,13 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-black text-sm uppercase tracking-wider text-secondary-foreground mb-4">Social Media</h4>
             <div className="flex gap-3">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
+              <a href="https://www.instagram.com/insideoutarcherymedia/?hl=nl" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://flickr.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
+              <a href="https://flickr.com/photos/198763833@N05/albums/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><circle cx="7" cy="12" r="5" /><circle cx="17" cy="12" r="5" /></svg>
               </a>
-              <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
+              <a href="https://twitch.tv/insideoutarchery" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
               </a>
             </div>
