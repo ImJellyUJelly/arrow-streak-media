@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               {[
                 { label: 'Home', path: '/' },
-                { label: 'Services', path: '/services' },
+                /*{ label: 'Services', path: '/services' },*/
                 { label: 'Albums', path: '/albums' },
                 { label: 'Contact', path: '/contact' },
               ].map((link) => (
