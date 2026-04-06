@@ -3,20 +3,14 @@ import { Trophy, ArrowRight, Calendar, ExternalLink, Image } from 'lucide-react'
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
 import heroImg from '@/assets/hero-archery.jpg';
-import tournament1 from '@/assets/tournament-1.jpg';
-import tournament2 from '@/assets/tournament-2.jpg';
-import tournament3 from '@/assets/tournament-3.jpg';
+import tournament1 from '@/assets/VeldOorlogsMuseum-7668.jpg';
 
 const tournaments = [
-  { title: 'National Field Championships', location: 'Sherwood Forest, UK', date: 'March 2024', type: 'Field', image: tournament1 },
-  { title: '3D Animal Round Open', location: 'Cwm Carn, Wales', date: 'April 2024', type: '3D', image: tournament2 },
-  { title: 'Indoor Winter Series Finals', location: 'NEC Birmingham', date: 'February 2024', type: 'Indoor', image: tournament3 },
+  { title: 'Field War Museum', location: 'Oorlogsmuseum Overloon', date: '4-5 April 2024', type: 'Field', image: tournament1 },
 ];
 
 const albums = [
-  { title: 'National Field Championships 2024', photos: 248, image: tournament1 },
-  { title: '3D Animal Round Open 2024', photos: 186, image: tournament2 },
-  { title: 'Indoor Winter Series 2024', photos: 124, image: tournament3 },
+  { title: 'Field War Museum', photos: 298, image: tournament1 },
 ];
 
 const Index = () => {
@@ -36,10 +30,6 @@ const Index = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-1 bg-accent" />
-              <span className="font-heading font-bold text-xs uppercase tracking-widest text-accent">Tournament Coverage</span>
-            </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-black uppercase tracking-wider leading-[0.9] mb-6">
               <span className="text-secondary-foreground">Inside Out</span>
               <br />
@@ -53,7 +43,7 @@ const Index = () => {
                 Explore Services <ArrowRight className="w-4 h-4" />
               </Link>
               <Link to="/contact" className="btn-outline inline-flex items-center gap-2">
-                Book Coverage
+                Contact
               </Link>
             </div>
           </div>
@@ -67,7 +57,7 @@ const Index = () => {
           <Trophy className="w-12 h-12 text-primary mx-auto mb-6" />
           <h2 className="section-heading mb-6">Our Mission</h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            We believe field archery deserves world-class media coverage. From the quiet forests to the buzzing competition halls,
+            We believe field archery deserves world-class media coverage. From the quiet forests to the buzzing plains,
             we capture the precision, passion, and community that make this sport extraordinary.
           </p>
         </div>
