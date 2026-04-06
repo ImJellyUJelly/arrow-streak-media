@@ -2,17 +2,10 @@ import { Link } from 'react-router-dom';
 import { ExternalLink, Image, ArrowRight } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
-import tournament1 from '@/assets/tournament-1.jpg';
-import tournament2 from '@/assets/tournament-2.jpg';
-import tournament3 from '@/assets/tournament-3.jpg';
+import warMuseumOverloon from '@/assets/warmuseum-overloon-header.jpg';
 
 const albums = [
-  { title: 'National Field Championships 2024', date: 'March 2024', photos: 248, image: tournament1, flickrUrl: 'https://flickr.com' },
-  { title: '3D Animal Round Open 2024', date: 'April 2024', photos: 186, image: tournament2, flickrUrl: 'https://flickr.com' },
-  { title: 'Indoor Winter Series Finals', date: 'February 2024', photos: 124, image: tournament3, flickrUrl: 'https://flickr.com' },
-  { title: 'Southern Counties Field 2023', date: 'May 2023', photos: 312, image: tournament1, flickrUrl: 'https://flickr.com' },
-  { title: 'UK Masters 3D 2023', date: 'June 2023', photos: 198, image: tournament2, flickrUrl: 'https://flickr.com' },
-  { title: 'Target Nationals 2023', date: 'July 2023', photos: 276, image: tournament3, flickrUrl: 'https://flickr.com' },
+  { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
 ];
 
 const Albums = () => {
