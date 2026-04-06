@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ExternalLink, Image, ArrowRight } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
-import warMuseumOverloon from '@/assets/warmuseum-overloon-header.jpg';
+import warMuseumOverloon from '@/assets/warmuseum-overloon-header.png';
 
 const albums = [
   { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
@@ -31,7 +31,7 @@ const Albums = () => {
             <svg className="w-6 h-6 text-primary-foreground" viewBox="0 0 24 24" fill="currentColor"><circle cx="7" cy="12" r="5" /><circle cx="17" cy="12" r="5" /></svg>
             <span className="font-heading font-bold text-sm uppercase tracking-wider text-primary-foreground">All albums hosted on Flickr</span>
           </div>
-          <a href="https://flickr.com" target="_blank" rel="noopener noreferrer" className="btn-primary text-xs py-2 px-4 inline-flex items-center gap-2">
+          <a href="https://flickr.com/photos/198763833@N05/albums/" target="_blank" rel="noopener noreferrer" className="btn-primary text-xs py-2 px-4 inline-flex items-center gap-2">
             Visit Flickr Profile <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
