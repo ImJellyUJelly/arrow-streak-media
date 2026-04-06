@@ -63,44 +63,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Tournaments */}
-      <section className="py-20 bg-background relative">
-        <div className="container mx-auto px-4">
-          <div className="flex items-end justify-between mb-12">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <div className="w-3 h-3 bg-accent rotate-45" />
-                <span className="font-heading font-bold text-xs uppercase tracking-widest text-muted-foreground">Featured</span>
-              </div>
-              <h2 className="section-heading">Tournament Highlights</h2>
-            </div>
-            <Link to="/tournaments" className="hidden md:flex items-center gap-2 text-primary font-heading font-bold uppercase text-sm tracking-wider hover:text-accent transition-colors">
-              View All <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {tournaments.map((t, i) => (
-              <DiagonalCard key={i} accentColor={i === 1 ? 'highlight' : 'accent'}>
-                <div className="relative overflow-hidden">
-                  <span className="badge bg-primary text-primary-foreground absolute top-3 left-3 z-10">{t.type}</span>
-                  <ImageWithFallback src={t.image} alt={t.title} className="w-full h-52 object-cover transition-transform duration-500 hover:scale-110" loading="lazy" width={800} height={600} />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-heading font-black text-lg uppercase tracking-wide text-secondary mb-2">{t.title}</h3>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5" /> {t.date}</span>
-                    <span>{t.location}</span>
-                  </div>
-                </div>
-              </DiagonalCard>
-            ))}
-          </div>
-          <Link to="/tournaments" className="md:hidden flex items-center justify-center gap-2 mt-8 text-primary font-heading font-bold uppercase text-sm tracking-wider">
-            View All <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
-
       {/* Latest Albums */}
       <section className="py-20 bg-secondary relative overflow-hidden">
         <div className="absolute top-1/4 left-10 w-0.5 h-40 bg-accent/20 rotate-[20deg]" />
