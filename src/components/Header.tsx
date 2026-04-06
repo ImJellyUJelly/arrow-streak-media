@@ -4,8 +4,8 @@ import { Target, Menu, X } from 'lucide-react';
 
 const navItems = [
   { label: 'Home', path: '/' },
-  { label: 'Tournaments', path: '/tournaments' },
-  { label: 'Calendar', path: '/calendar' },
+  //{ label: 'Tournaments', path: '/tournaments' },
+  //{ label: 'Calendar', path: '/calendar' },
   { label: 'Services', path: '/services' },
   { label: 'About', path: '/about' },
   { label: 'Albums', path: '/albums' },
