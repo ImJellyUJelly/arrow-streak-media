@@ -5,10 +5,6 @@ import ImageWithFallback from '@/components/ImageWithFallback';
 import heroImg from '@/assets/hero-archery.jpg';
 import tournament1 from '@/assets/VeldOorlogsMuseum-7668.jpg';
 
-const tournaments = [
-  { title: 'Field War Museum', location: 'Oorlogsmuseum Overloon', date: '4-5 April 2024', type: 'Field', image: tournament1 },
-];
-
 const albums = [
   { title: 'Field War Museum', photos: 298, image: tournament1 },
 ];
