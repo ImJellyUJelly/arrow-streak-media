@@ -6,7 +6,7 @@ const navItems = [
   { label: 'Home', path: '/' },
   //{ label: 'Tournaments', path: '/tournaments' },
   //{ label: 'Calendar', path: '/calendar' },
-  { label: 'Services', path: '/services' },
+  //{ label: 'Services', path: '/services' },
   { label: 'About', path: '/about' },
   { label: 'Albums', path: '/albums' },
   { label: 'Contact', path: '/contact' },
