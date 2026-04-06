@@ -34,11 +34,9 @@ const App = () => (
         <main>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/tournaments" element={<Tournaments />} />
-            <Route path="/calendar" element={<CalendarPage />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
             <Route path="/albums" element={<Albums />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
