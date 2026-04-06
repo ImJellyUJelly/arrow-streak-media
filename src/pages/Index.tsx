@@ -22,11 +22,6 @@ const Index = () => {
           <img src={heroImg} alt="Field archery action" className="w-full h-full object-cover" width={1920} height={1080} />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/30" />
         </div>
-        {/* Diagonal accents */}
-        <div className="absolute top-20 right-1/4 w-1 h-40 bg-accent rotate-[25deg] opacity-60" />
-        <div className="absolute bottom-40 right-1/3 w-1 h-32 bg-primary rotate-[-20deg] opacity-40" />
-        <div className="absolute top-1/3 right-[15%] w-3 h-3 bg-accent rotate-45 opacity-80" />
-        <div className="absolute bottom-1/4 right-[20%] w-2 h-2 bg-highlight rotate-45 opacity-60" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
@@ -107,7 +102,7 @@ const Index = () => {
             Tournament Organizer?
           </h2>
           <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-8">
-            Let us capture your event with professional photography, create compelling event branding, or provide full livestream coverage. We'll help you promote field archery to a wider audience.
+            Let us capture your event with professional photography or create compelling event branding. We'll help you promote field archery to a wider audience.
           </p>
           <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Get in Touch <ArrowRight className="w-4 h-4" />
