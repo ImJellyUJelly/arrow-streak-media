@@ -27,7 +27,7 @@ const App = () => (
         <NotificationBanner
           type="new-album"
           title="New Album Added"
-          message="National Field Championships 2024 — 248 photos now available!"
+          message="Field Oorlogsmuseum Overloon — 298 photos now available!"
           actionLabel="View Album"
           actionHref="/albums"
         />
