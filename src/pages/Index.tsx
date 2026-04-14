@@ -31,7 +31,7 @@ const Index = () => {
               <span className="text-accent">Archery Media</span>
             </h1>
             <p className="text-secondary-foreground/70 text-lg md:text-xl max-w-lg mb-8 font-body">
-              Professional photography, event branding, and livestream coverage: promoting archery to the world.
+              Professional photography, event promotion, and livestream coverage: promoting archery to the world.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/services" className="btn-primary inline-flex items-center gap-2">
