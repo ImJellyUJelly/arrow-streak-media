@@ -20,7 +20,7 @@ const Index = () => {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Field archery action" className="w-full h-full object-cover" width={1920} height={1080} />
-          <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/60 to-secondary/30" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
