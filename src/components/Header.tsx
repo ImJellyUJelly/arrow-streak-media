@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Target, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import ioaLogo from '@/assets/IOA_media-Logo-Kleur.png';
 
 const navItems = [
   { label: 'Home', path: '/' },
@@ -25,9 +26,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
-            <div className="w-10 h-10 bg-primary flex items-center justify-center">
-              <Target className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img src={ioaLogo} alt="IOA Media logo" className="w-10 h-10 object-contain" />
             <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-accent rotate-45" />
           </div>
           <div>

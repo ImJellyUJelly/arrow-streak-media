@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-6 border-t border-secondary-foreground/10 flex items-center justify-between relative">
-          <p className="text-secondary-foreground/40 text-xs">© 2024 Inside Out Archery Media. All rights reserved.</p>
+          <p className="text-secondary-foreground/40 text-xs">© 2025 Inside Out Archery Media. All rights reserved.</p>
           {/* Yellow diagonal accent */}
           <div className="absolute -bottom-2 right-0 w-20 h-4 bg-highlight" style={{ clipPath: 'polygon(20% 0, 100% 0, 100% 100%, 0 100%)' }} />
         </div>

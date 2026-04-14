@@ -26,10 +26,10 @@ const App = () => (
         <Header />
         <NotificationBanner
           type="new-album"
-          title="New Album Added"
-          message="Field Oorlogsmuseum Overloon — 298 photos now available!"
+          title="5 Nations: Wuustwezel"
+          message="11-12 April 2026 — new photo album now available!"
           actionLabel="View Album"
-          actionHref="/albums"
+          actionHref="https://flic.kr/s/aHBqjCQGpc"
         />
         <main>
           <Routes>
