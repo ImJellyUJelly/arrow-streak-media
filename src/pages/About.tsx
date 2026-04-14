@@ -2,7 +2,7 @@ import { Target, Heart, Users, TrendingUp } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
 import aboutImg from '@/assets/about-photographer.jpg';
-import tournament1 from '@/assets/tournament-1.jpg';
+import tournament1 from '@/assets/VeldOorlogsMuseum-7668.jpg';
 
 const values = [
   { icon: Heart, title: 'Discipline', description: 'Field archery demands focus, patience, and precision. We capture the dedication behind every shot.' },

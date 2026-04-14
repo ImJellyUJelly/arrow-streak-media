@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Trophy, ArrowRight, Calendar, ExternalLink, Image } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
-import heroImg from '@/assets/hero-archery.jpg';
+import heroImg from '@/assets/VeldOorlogsMuseum-7668.jpg';
 import tournament1 from '@/assets/VeldOorlogsMuseum-7668.jpg';
 
 const albums = [

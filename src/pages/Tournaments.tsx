@@ -1,9 +1,9 @@
 import { Calendar, MapPin, ArrowRight } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
-import tournament1 from '@/assets/tournament-1.jpg';
-import tournament2 from '@/assets/tournament-2.jpg';
-import tournament3 from '@/assets/tournament-3.jpg';
+import tournament1 from '@/assets/VeldOorlogsMuseum-7668.jpg';
+import tournament2 from '@/assets/VeldOorlogsMuseum-7668.jpg';
+import tournament3 from '@/assets/VeldOorlogsMuseum-7668.jpg';
 
 const tournaments = [
   { title: 'National Field Championships 2024', location: 'Sherwood Forest, UK', date: 'March 15-17, 2024', type: 'Field', image: tournament1 },
