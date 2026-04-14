@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="h-2 bg-accent w-full" style={{ clipPath: 'polygon(0 0, 100% 0, 95% 100%, 5% 100%)' }} />
 
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -25,6 +25,15 @@ const Footer = () => {
             <p className="text-secondary-foreground/60 text-sm leading-relaxed">
               Professional tournament photography, event promotion, and livestream coverage for the field archery community.
             </p>
+          </div>
+
+          {/* KVK */}
+          <div>
+            <h4 className="font-heading font-black text-sm uppercase tracking-wider text-secondary-foreground mb-4">Company Information</h4>
+            <div className="flex flex-col gap-2">
+              <span className="text-secondary-foreground/60 text-sm">KVK: 98203843</span>
+              <span className="text-secondary-foreground/60 text-sm">VAT: NL005316306B24</span>
+            </div>
           </div>
 
           {/* Quick Links */}
