@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Target, Instagram } from 'lucide-react';
+import { Target, Instagram, Facebook } from 'lucide-react';
+import ioaLogo from '@/assets/IOA_media-Logo-Kleur.png';
 
 const Footer = () => {
   return (
@@ -13,9 +14,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="relative">
-                <div className="w-8 h-8 bg-primary flex items-center justify-center">
-                  <Target className="w-5 h-5 text-primary-foreground" />
-                </div>
+                <img src={ioaLogo} alt="IOA Media logo" className="w-8 h-8 object-contain" />
                 <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-accent rotate-45" />
               </div>
               <div>
@@ -24,7 +23,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-secondary-foreground/60 text-sm leading-relaxed">
-              Professional tournament photography, event branding, and livestream coverage for the field archery community.
+              Professional tournament photography, event promotion, and livestream coverage for the field archery community.
             </p>
           </div>
 
@@ -49,7 +48,10 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-black text-sm uppercase tracking-wider text-secondary-foreground mb-4">Social Media</h4>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/insideoutarcherymedia/?hl=nl" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
+              <a href="https://www.facebook.com/profile.php?id=61576683440025" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="https://www.instagram.com/insideoutarcherymedia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://flickr.com/photos/198763833@N05/albums/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-secondary-foreground transition-all">

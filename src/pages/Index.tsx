@@ -2,11 +2,15 @@ import { Link } from 'react-router-dom';
 import { Trophy, ArrowRight, Calendar, ExternalLink, Image } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
-import heroImg from '@/assets/VeldOorlogsMuseum-7668.jpg';
-import tournament1 from '@/assets/VeldOorlogsMuseum-7668.jpg';
+import heroImg from '@/assets/heroImg.jpg';
+import veldOorlogsmuseum from '@/assets/albumCoverOorlogsmuzeum.jpg';
+import veldWuustwezel from '@/assets/albumCoverWuustwezel.jpg';
+import veldBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 
 const albums = [
-  { title: 'Field War Museum', photos: 298, image: tournament1 },
+  { title: '5 Nations: Wuustwezel',  image: veldWuustwezel, photos: 300, flickrUrl: 'https://flic.kr/s/aHBqjCQGpc' },
+  { title: 'Field War Museum Overloon', photos: 298, image: veldOorlogsmuseum, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
+  { title: 'Field Bergen op Zoom', photos: 226, image: veldBergenOpZoom, flickrUrl: 'https://flic.kr/s/aHBqjCNaR6' },
 ];
 
 const Index = () => {
@@ -27,7 +31,7 @@ const Index = () => {
               <span className="text-accent">Archery Media</span>
             </h1>
             <p className="text-secondary-foreground/70 text-lg md:text-xl max-w-lg mb-8 font-body">
-              Professional photography, event branding, and livestream coverage — promoting field archery to the world.
+              Professional photography, event branding, and livestream coverage: promoting archery to the world.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/services" className="btn-primary inline-flex items-center gap-2">
@@ -46,10 +50,10 @@ const Index = () => {
         <div className="absolute top-0 left-0 w-full h-1 bg-accent" style={{ clipPath: 'polygon(0 0, 100% 0, 95% 100%, 5% 100%)' }} />
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <Trophy className="w-12 h-12 text-primary mx-auto mb-6" />
-          <h2 className="section-heading mb-6">Our Mission</h2>
+          <h2 className="section-heading mb-6">My Mission</h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            We believe field archery deserves world-class media coverage. From the quiet forests to the buzzing plains,
-            we capture the precision, passion, and community that make this sport extraordinary.
+            I believe field archery deserves world-class media coverage. From the quiet forests to the buzzing plains,
+            I capture the focus, passion, and community that make this sport extraordinary.
           </p>
         </div>
       </section>
@@ -68,19 +72,19 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {albums.map((a, i) => (
-              <a key={i} href="https://flickr.com" target="_blank" rel="noopener noreferrer" className="group relative block">
+              <a key={i} href={a.flickrUrl} target="_blank" rel="noopener noreferrer" className="group relative block">
                 <DiagonalCard accentColor="accent">
                   <div className="relative overflow-hidden">
                     <ImageWithFallback src={a.image} alt={a.title} className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" width={800} height={600} />
                     <div className="absolute inset-0 bg-secondary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <ExternalLink className="w-8 h-8 text-secondary-foreground" />
                     </div>
-                    <div className="absolute bottom-3 left-3 badge bg-accent text-accent-foreground">
+                    <div className="absolute bottom-12 left-3 badge bg-accent text-accent-foreground">
                       <Image className="w-3 h-3 mr-1" /> {a.photos} Photos
                     </div>
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-heading font-bold text-sm uppercase tracking-wide text-secondary">{a.title}</h3>
+                    <div className="absolute bottom-3 left-3 bg-secondary/80 text-secondary-foreground p-2 rounded">
+                      <h3 className="font-heading font-bold text-sm uppercase tracking-wide">{a.title}</h3>
+                    </div>
                   </div>
                 </DiagonalCard>
               </a>
@@ -98,7 +102,7 @@ const Index = () => {
             Tournament Organizer?
           </h2>
           <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-8">
-            Let us capture your event with professional photography or create compelling event branding. We'll help you promote field archery to a wider audience.
+            Let me capture your event with professional photography or create compelling event promotion. I'll help you promote field archery to a wider audience.
           </p>
           <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Get in Touch <ArrowRight className="w-4 h-4" />

@@ -1,20 +1,22 @@
-import { Calendar as CalendarIcon, MapPin, Clock, Video } from 'lucide-react';
+import { Calendar as CalendarIcon, MapPin, Clock, Video, AlertTriangle } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 
 const events = [
-  { title: 'Southern Counties Field Shoot', date: 'May 4-5, 2024', time: '09:00 - 17:00', location: 'New Forest, Hampshire', type: 'Field', livestream: false },
-  { title: 'UK Masters 3D Championship', date: 'June 1-2, 2024', time: '08:30 - 18:00', location: 'Delamere Forest, Cheshire', type: '3D', livestream: true },
-  { title: 'Target Nationals 2024', date: 'July 5-7, 2024', time: '09:00 - 17:30', location: 'Lilleshall, Shropshire', type: 'Target', livestream: true },
-  { title: 'World Field Archery Championship', date: 'August 12-18, 2024', time: 'All Day', location: 'Cortina d\'Ampezzo, Italy', type: 'Field', livestream: true },
-  { title: 'Woodland 3D Safari Shoot', date: 'September 14-15, 2024', time: '09:00 - 16:00', location: 'Forest of Dean', type: '3D', livestream: false },
-  { title: 'Autumn Indoor Series Rd 1', date: 'October 5, 2024', time: '10:00 - 16:00', location: 'Leicester Arena', type: 'Indoor', livestream: false },
+  { title: 'Training Camp: Mullenborn', date: 'April 24-27, 2026', location: 'Mullenborn, Germany', type: 'Field', livestream: true, tentative: false },
+  { title: '5 Nations: Vertus', date: 'May 9-10, 2026', location: 'Vertus, France', type: 'Field', livestream: true, tentative: false },
+  { title: '5 Nations: Trier', date: 'May 23-24, 2026', location: 'Trier, Germany', type: 'Field', livestream: true, tentative: false },
+  { title: 'Veld Hapert', date: 'June 13-14, 2026', location: 'Hapert, Netherlands', type: 'Field', livestream: false, tentative: false },
+  { title: 'Veld Amersfoort', date: 'June 20-21, 2026', location: 'Amersfoort, Netherlands', type: 'Field', livestream: false, tentative: true },
+  { title: 'Veld Haaksbergen', date: 'July 4-5, 2026', location: 'Haaksbergen, Netherlands', type: 'Field', livestream: false, tentative: false },
+  { title: '5 Nations: Sint-Oedenrode', date: 'July 11-12, 2026', location: 'Sint-Oedenrode, Netherlands', type: 'Field', livestream: true, tentative: true },
+  { title: '5 Nations: Esch-sur-Alzette', date: 'Augustus 29-30, 2026', location: 'Esch-sur-Alzette, Luxembourg', type: 'Field', livestream: true, tentative: false },
 ];
 
 const typeBadgeColors: Record<string, string> = {
   'Field': 'bg-accent text-accent-foreground',
   '3D': 'bg-highlight text-highlight-foreground',
   'Indoor': 'bg-primary text-primary-foreground',
-  'Target': 'bg-secondary text-secondary-foreground',
+  'Outdoor': 'bg-secondary text-secondary-foreground',
 };
 
 const CalendarPage = () => {
@@ -38,7 +40,7 @@ const CalendarPage = () => {
         <div className="container mx-auto px-4">
           <div className="relative max-w-4xl mx-auto">
             {/* Vertical line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-secondary/20 hidden md:block" style={{ transform: 'skewX(-2deg)' }} />
+            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-secondary/20 hidden md:block" />
 
             {events.map((event, i) => (
               <div key={i} className={`relative flex flex-col md:flex-row items-center gap-6 mb-12 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
@@ -53,15 +55,20 @@ const CalendarPage = () => {
                             <Video className="w-3 h-3" /> Livestream
                           </span>
                         )}
+                        {event.tentative && (
+                          <span className="badge bg-yellow-200 text-yellow-800 flex items-center gap-1">
+                            <AlertTriangle className="w-3 h-3" /> Tentative
+                          </span>
+                        )}
                       </div>
                       <h3 className="font-heading font-black text-lg uppercase tracking-wide text-secondary mb-3">{event.title}</h3>
                       <div className="flex flex-col gap-1 text-sm text-muted-foreground">
                         <span className="flex items-center gap-1.5" style={{ justifyContent: i % 2 === 0 ? 'flex-end' : 'flex-start' }}>
                           <CalendarIcon className="w-3.5 h-3.5" /> {event.date}
                         </span>
-                        <span className="flex items-center gap-1.5" style={{ justifyContent: i % 2 === 0 ? 'flex-end' : 'flex-start' }}>
+                        {/* <span className="flex items-center gap-1.5" style={{ justifyContent: i % 2 === 0 ? 'flex-end' : 'flex-start' }}>
                           <Clock className="w-3.5 h-3.5" /> {event.time}
-                        </span>
+                        </span> */}
                         <span className="flex items-center gap-1.5" style={{ justifyContent: i % 2 === 0 ? 'flex-end' : 'flex-start' }}>
                           <MapPin className="w-3.5 h-3.5" /> {event.location}
                         </span>
@@ -93,6 +100,7 @@ const CalendarPage = () => {
                 <div className="flex items-center gap-2 mb-3">
                   <span className={`badge ${typeBadgeColors[event.type]}`}>{event.type}</span>
                   {event.livestream && <Video className="w-4 h-4 text-accent" />}
+                  {event.tentative && <AlertTriangle className="w-4 h-4 text-yellow-600" />}
                 </div>
                 <h3 className="font-heading font-bold text-sm uppercase tracking-wide text-secondary-foreground mb-2">{event.title}</h3>
                 <p className="text-secondary-foreground/60 text-xs">{event.date} · {event.location}</p>

@@ -9,33 +9,30 @@ const services = [
     colorClass: 'text-primary',
     bgClass: 'bg-primary/10',
     accentClass: 'bg-primary',
-    description: 'Professional action photography capturing every moment of your tournament — from the first arrow to the final podium.',
+    description: 'Professional photography capturing every moment of your tournament. From the practice field, to the sponsor promotion, to the final podium.',
     features: [
       'High-resolution action shots',
       'Competitor portraits and group photos',
-      'Full event coverage from setup to awards',
+      'Full event coverage from practice to awards',
       'Fast turnaround Flickr gallery delivery',
-      'Social media ready image packages',
-      'Print-quality files available',
+      'High-quality files available',
     ],
   },
-  {
-    icon: Palette,
-    title: 'Event Branding & Promotion',
-    color: 'accent',
-    colorClass: 'text-accent',
-    bgClass: 'bg-accent/10',
-    accentClass: 'bg-accent',
-    description: 'Create a professional identity for your tournament that attracts competitors and sponsors alike.',
-    features: [
-      'Custom event logos and branding',
-      'Social media campaign design',
-      'Pre-event promotional content',
-      'On-site signage and banners',
-      'Post-event highlight reels',
-      'Sponsor integration packages',
-    ],
-  },
+  // {
+  //   icon: Palette,
+  //   title: 'Event Branding & Promotion',
+  //   color: 'accent',
+  //   colorClass: 'text-accent',
+  //   bgClass: 'bg-accent/10',
+  //   accentClass: 'bg-accent',
+  //   description: 'Create a professional identity for your tournament that attracts competitors and sponsors alike.',
+  //   features: [
+  //     'Pre-event promotional content',
+  //     'On-site signage and banners',
+  //     'Post-event highlight reels',
+  //     'Sponsor integration packages',
+  //   ],
+  // },
   {
     icon: Video,
     title: 'Livestream Production',
@@ -43,13 +40,11 @@ const services = [
     colorClass: 'text-highlight',
     bgClass: 'bg-highlight/10',
     accentClass: 'bg-highlight',
-    description: 'Bring your tournament to a global audience with professional multi-camera livestream production.',
+    description: 'Bring your tournament to a global audience with livestream production.',
     features: [
-      'Multi-camera livestream setup',
+      'Single-camera POV livestream setup',
       'Professional commentary integration',
-      'Real-time scoring overlays',
-      'Platform streaming (YouTube/Twitch)',
-      'Post-event VOD highlights',
+      'Platform streaming (Twitch)',
       'Audience engagement tools',
     ],
   },
@@ -120,7 +115,7 @@ const Services = () => {
             Ready to Elevate Your Event?
           </h2>
           <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-8">
-            Let's discuss how we can provide professional media coverage for your next tournament.
+            Let's discuss how I can provide professional media coverage for your next tournament.
           </p>
           <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Get Started <ArrowRight className="w-4 h-4" />

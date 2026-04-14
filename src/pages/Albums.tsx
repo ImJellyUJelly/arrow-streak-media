@@ -1,12 +1,14 @@
 import { ExternalLink, Image, ArrowRight } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
-import warMuseumOverloon from '@/assets/VeldOorlogsMuseum-7668.jpg';
-import wuustwezel from '@/assets/5NationsWuustwezel-9039.jpg';
+import warMuseumOverloon from '@/assets/albumCoverOorlogsmuzeum.jpg';
+import wuustwezel from '@/assets/albumCoverWuustwezel.jpg';
+import albumCoverBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 
 const albums = [
-  { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
   { title: '5 Nations: Wuustwezel', date: '11-12 April 2026', image: wuustwezel, photos: 300, flickrUrl: 'https://flic.kr/s/aHBqjCQGpc' },
+  { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
+  { title: 'Field Bergen op Zoom', date: '14-15 March 2026', photos: 226, image: albumCoverBergenOpZoom, flickrUrl: 'https://flic.kr/s/aHBqjCNaR6' },
 ];
 
 const Albums = () => {
@@ -22,23 +24,6 @@ const Albums = () => {
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black uppercase tracking-wider text-secondary-foreground">Albums</h1>
           <p className="text-secondary-foreground/60 mt-3 max-w-xl">Browse tournament photo albums. All photos hosted on Flickr for easy viewing and downloading.</p>
-        </div>
-      </section>
-
-      {/* Usage Disclaimer */}
-      <section className="bg-background py-8 border-b border-primary/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <div className="w-2 h-2 bg-accent rotate-45" />
-              <span className="font-heading font-bold text-xs uppercase tracking-widest text-muted-foreground">Usage Policy</span>
-            </div>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              All tournament photos are available for <strong className="text-secondary-foreground">free personal use</strong>, perfect for sharing memories with fellow archers or creating personal keepsakes.
-              For commercial applications, promotional use, or any professional projects, we kindly ask you to <a href="/contact" className="text-accent hover:text-accent/80 font-medium underline">reach out to us</a> for licensing options.
-              Let's collaborate to showcase the beauty of field archery together!
-            </p>
-          </div>
         </div>
       </section>
 
@@ -80,6 +65,23 @@ const Albums = () => {
                 </DiagonalCard>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Usage Disclaimer */}
+      <section className="bg-background py-8 border-b border-primary/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <div className="w-2 h-2 bg-accent rotate-45" />
+              <span className="font-heading font-bold text-xs uppercase tracking-widest text-muted-foreground">Usage Policy</span>
+            </div>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              All tournament photos are available for <strong className="text-accent font-semibold">free personal use</strong>, perfect for sharing memories with fellow archers or creating personal keepsakes.
+              For commercial applications, promotional use, or any professional projects, we kindly ask you to <a href="/contact" className="text-accent hover:text-accent/80 font-medium underline">reach out to us</a> for licensing options.
+              Let's collaborate to showcase the beauty of field archery together!
+            </p>
           </div>
         </div>
       </section>

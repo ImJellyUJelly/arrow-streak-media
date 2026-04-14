@@ -5,11 +5,10 @@ import ioaLogo from '@/assets/IOA_media-Logo-Kleur.png';
 
 const navItems = [
   { label: 'Home', path: '/' },
-  //{ label: 'Tournaments', path: '/tournaments' },
-  //{ label: 'Calendar', path: '/calendar' },
+  { label: 'Albums', path: '/albums' },
+  { label: 'Calendar', path: '/calendar' },
   //{ label: 'Services', path: '/services' },
   { label: 'About', path: '/about' },
-  { label: 'Albums', path: '/albums' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -27,7 +26,6 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
             <img src={ioaLogo} alt="IOA Media logo" className="w-10 h-10 object-contain" />
-            <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-accent rotate-45" />
           </div>
           <div>
             <div className="font-heading font-black text-lg uppercase tracking-wider text-secondary-foreground leading-none">Inside Out</div>

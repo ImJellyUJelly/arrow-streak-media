@@ -1,8 +1,8 @@
-import { Target, Heart, Users, TrendingUp } from 'lucide-react';
+import { Target, Heart, Users, TrendingUp, Facebook, Instagram } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 import ImageWithFallback from '@/components/ImageWithFallback';
 import aboutImg from '@/assets/about-photographer.jpg';
-import tournament1 from '@/assets/VeldOorlogsMuseum-7668.jpg';
+import aboutVision from '@/assets/aboutVision.jpg';
 
 const values = [
   { icon: Heart, title: 'Discipline', description: 'Field archery demands focus, patience, and precision. We capture the dedication behind every shot.' },
@@ -19,9 +19,9 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-3 h-3 bg-accent rotate-45" />
-            <span className="font-heading font-bold text-xs uppercase tracking-widest text-secondary-foreground/60">Who We Are</span>
+            <span className="font-heading font-bold text-xs uppercase tracking-widest text-secondary-foreground/60">Who I am</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-heading font-black uppercase tracking-wider text-secondary-foreground">About Us</h1>
+          <h1 className="text-4xl md:text-6xl font-heading font-black uppercase tracking-wider text-secondary-foreground">About Me</h1>
         </div>
       </section>
 
@@ -43,10 +43,11 @@ const About = () => {
                 Inside Out Archery Media was born from a passion for field archery and a frustration with the lack of professional media coverage in the sport.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                As both archers and media professionals, we understood that field archery — with its stunning woodland courses, technical challenges, and incredible community — deserved to be showcased to a wider audience.
+                As archer I understood that field archery, with its stunning courses, technical challenges and incredible community, deserved to be showcased to a wider audience.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Today, we provide tournament photography, event branding, and livestream production services to archery clubs and organizations across the UK and beyond.
+                Today, I provide tournament photography, event promotion, and livestream production services to archery clubs and organizations across the Netherlands and beyond.
+                Not just for field tournaments, but also for 3D, indoor, and outdoor events.
               </p>
             </div>
           </div>
@@ -57,7 +58,7 @@ const About = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <Target className="w-12 h-12 text-accent mx-auto mb-6" />
-          <h2 className="text-3xl md:text-5xl font-heading font-black uppercase tracking-wider text-secondary-foreground mb-6">Our Mission</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black uppercase tracking-wider text-secondary-foreground mb-6">My Mission</h2>
           <p className="text-secondary-foreground/70 text-lg leading-relaxed">
             To promote and celebrate field archery through world-class media coverage, making the sport more accessible, visible, and inspiring for archers and fans worldwide.
           </p>
@@ -94,15 +95,15 @@ const About = () => {
             <div className="lg:w-7/12">
               <h2 className="section-heading mb-6">Our Vision</h2>
               <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
-                We envision a future where field archery receives the same level of professional media coverage as any mainstream sport.
+                I envision a future where field archery receives the same level of professional media coverage as any mainstream sport.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Through compelling photography, dynamic branding, and engaging livestreams, we're building a bridge between the archery community and a global audience hungry for authentic, skill-based sporting content.
+                Through compelling photography, dynamic branding, and engaging livestreams, I'm building a bridge between the archery community and a global audience hungry for amazing sporting content.
               </p>
             </div>
             <div className="lg:w-5/12 relative">
               <div className="absolute -top-3 -right-3 w-full h-full bg-highlight/20" style={{ clipPath: 'polygon(5% 0, 100% 0, 95% 100%, 0 100%)' }} />
-              <ImageWithFallback src={tournament1} alt="Field archery vision" className="relative z-10 w-full aspect-video object-cover" loading="lazy" width={800} height={600} />
+              <ImageWithFallback src={aboutVision} alt="Field archery vision" className="relative z-10 w-full aspect-video object-cover" loading="lazy" width={800} height={600} />
             </div>
           </div>
         </div>

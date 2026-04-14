@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, CheckCircle, Mail, Phone, MapPin, Instagram } from 'lucide-react';
+import { Send, CheckCircle, Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
 import { z } from 'zod';
 
 const contactSchema = z.object({
@@ -133,14 +133,14 @@ const Contact = () => {
                 <div className="card-diagonal-accent -top-2 -right-2 bg-accent" />
                 <h3 className="font-heading font-black text-lg uppercase tracking-wider text-secondary-foreground mb-4">Direct Contact</h3>
                 <div className="flex flex-col gap-3">
-                  <a href="mailto:hello@insideoutarchery.com" className="flex items-center gap-3 text-secondary-foreground/70 hover:text-accent transition-colors text-sm">
-                    <Mail className="w-4 h-4 shrink-0" /> hello@insideoutarchery.com
+                  <a href="mailto:info@insideoutarcherymedia.com" className="flex items-center gap-3 text-secondary-foreground/70 hover:text-accent transition-colors text-sm">
+                    <Mail className="w-4 h-4 shrink-0" /> info@insideoutarcherymedia.com
                   </a>
                   <a href="tel:+441234567890" className="flex items-center gap-3 text-secondary-foreground/70 hover:text-accent transition-colors text-sm">
-                    <Phone className="w-4 h-4 shrink-0" /> +44 1234 567 890
+                    <Phone className="w-4 h-4 shrink-0" /> +31 6 39 37 95 12
                   </a>
                   <span className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
-                    <MapPin className="w-4 h-4 shrink-0" /> United Kingdom
+                    <MapPin className="w-4 h-4 shrink-0" /> Eindhoven, Netherlands
                   </span>
                 </div>
               </div>
@@ -150,13 +150,17 @@ const Contact = () => {
                 <div className="card-diagonal-accent -top-2 -right-2 bg-highlight" />
                 <h3 className="font-heading font-black text-lg uppercase tracking-wider text-secondary mb-4">Social Media</h3>
                 <div className="flex flex-col gap-3">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+
+                  <a href="https://www.instagram.com/insideoutarcherymedia" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                     <Instagram className="w-4 h-4" /> Instagram
                   </a>
-                  <a href="https://flickr.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+                  <a href="https://www.facebook.com/profile.php?id=61576683440025" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+                    <Facebook className="w-4 h-4" /> Facebook
+                  </a>
+                  <a href="https://flickr.com/photos/198763833@N05/albums" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><circle cx="7" cy="12" r="5" /><circle cx="17" cy="12" r="5" /></svg> Flickr
                   </a>
-                  <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
+                  <a href="https://twitch.tv/insideoutarchery" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg> Twitch
                   </a>
                 </div>
@@ -166,7 +170,7 @@ const Contact = () => {
               <div className="bg-accent p-6 relative">
                 <div className="card-diagonal-accent -top-2 -right-2 bg-secondary" />
                 <h3 className="font-heading font-black text-lg uppercase tracking-wider text-accent-foreground mb-2">Quick Response</h3>
-                <p className="text-accent-foreground/80 text-sm">We typically respond within 24 hours. For urgent inquiries, please call us directly.</p>
+                <p className="text-accent-foreground/80 text-sm">I typically respond within 24 hours. For urgent inquiries, please call me directly.</p>
               </div>
             </div>
           </div>
