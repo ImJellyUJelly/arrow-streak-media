@@ -6,7 +6,7 @@ import aboutVision from '@/assets/aboutVision.jpg';
 
 const values = [
   { icon: Heart, title: 'Discipline', description: 'Field archery demands focus, patience, and precision. We capture the dedication behind every shot.' },
-  { icon: Users, title: 'Community', description: 'From local clubs to international championships, the archery community is our family.' },
+  { icon: Users, title: 'Community', description: 'From local clubs to international championships, the archery community is family.' },
   { icon: TrendingUp, title: 'Growth', description: 'We\'re committed to growing field archery\'s visibility and attracting new participants to the sport.' },
 ];
 
@@ -93,12 +93,12 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-7/12">
-              <h2 className="section-heading mb-6">Our Vision</h2>
+              <h2 className="section-heading mb-6">My Vision</h2>
               <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
                 I envision a future where field archery receives the same level of professional media coverage as any mainstream sport.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Through compelling photography, dynamic branding, and engaging livestreams, I'm building a bridge between the archery community and a global audience hungry for amazing sporting content.
+                Through compelling photography, dynamic branding, and engaging livestreams, I'm building a bridge between the archery community and a global audience.
               </p>
             </div>
             <div className="lg:w-5/12 relative">

@@ -36,7 +36,7 @@ const Tournaments = () => {
             <span className="font-heading font-bold text-xs uppercase tracking-widest text-secondary-foreground/60">Archive</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black uppercase tracking-wider text-secondary-foreground">Tournaments</h1>
-          <p className="text-secondary-foreground/60 mt-3 max-w-xl">Browse our complete archive of tournament coverage — from woodland field shoots to indoor championship finals.</p>
+          <p className="text-secondary-foreground/60 mt-3 max-w-xl">Browse my complete archive of tournament coverage — from woodland field shoots to indoor championship finals.</p>
         </div>
       </section>
 

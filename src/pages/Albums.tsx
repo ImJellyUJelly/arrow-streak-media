@@ -89,7 +89,7 @@ const Albums = () => {
       {/* Bottom CTA */}
       <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-secondary-foreground/70 mb-4">Want to see more? Browse our complete collection on Flickr.</p>
+          <p className="text-secondary-foreground/70 mb-4">Want to see more? Browse my complete collection on Flickr.</p>
           <a href="https://flickr.com/photos/198763833@N05/albums/" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
             Browse All Albums <ArrowRight className="w-4 h-4" />
           </a>
