@@ -30,7 +30,7 @@ const App = () => (
           message="11-12 April 2026 — new photo album now available!"
           actionLabel="View Album"
           actionHref="https://flic.kr/s/aHBqjCQGpc"
-        /> */}
+        /> */} 
         <main>
           <Routes>
             <Route path="/" element={<Index />} />
