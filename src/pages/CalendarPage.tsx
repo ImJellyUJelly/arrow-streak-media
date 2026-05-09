@@ -2,8 +2,8 @@ import { Calendar as CalendarIcon, MapPin, Clock, Video, AlertTriangle } from 'l
 import DiagonalCard from '@/components/DiagonalCard';
 
 const events = [
-  { title: '5 Nations: Vertus', date: 'May 9-10, 2026', location: 'Vertus, France', type: 'Field', livestream: true, tentative: false },
-  { title: '5 Nations: Trier', date: 'May 23-24, 2026', location: 'Trier, Germany', type: 'Field', livestream: true, tentative: false },
+  { title: '5 Nations: Vertus', date: 'May 9-10, 2026', location: 'Vertus, France', type: 'Field', livestream: false, tentative: false },
+  { title: '5 Nations: Trier', date: 'May 23-24, 2026', location: 'Trier, Germany', type: 'Field', livestream: false, tentative: false },
   { title: 'Veld Hapert', date: 'June 13-14, 2026', location: 'Hapert, Netherlands', type: 'Field', livestream: false, tentative: false },
   { title: 'Veld Amersfoort', date: 'June 20-21, 2026', location: 'Amersfoort, Netherlands', type: 'Field', livestream: false, tentative: true },
   { title: 'Veld Haaksbergen', date: 'July 4-5, 2026', location: 'Haaksbergen, Netherlands', type: 'Field', livestream: false, tentative: false },
