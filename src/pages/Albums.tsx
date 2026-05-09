@@ -12,7 +12,7 @@ const albums = [
   { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
   { title: 'Field Bergen op Zoom', date: '14-15 March 2026', photos: 226, image: albumCoverBergenOpZoom, flickrUrl: 'https://flic.kr/s/aHBqjCNaR6' },
 ];
-
+ 
 const Albums = () => {
   return (
     <div>
