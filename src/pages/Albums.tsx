@@ -7,7 +7,7 @@ import vertus from '@/assets/albumCoverVertus.jpg';
 import albumCoverBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 
 const albums = [
-  { title: '5 Nations: Vertus', date: '9-10 May 2026', image: vertus, photos: 200, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
+  { title: '5 Nations: Vertus', date: '9-10 May 2026', image: vertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
   { title: '5 Nations: Wuustwezel', date: '11-12 April 2026', image: wuustwezel, photos: 300, flickrUrl: 'https://flic.kr/s/aHBqjCQGpc' },
   { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
   { title: 'Field Bergen op Zoom', date: '14-15 March 2026', photos: 226, image: albumCoverBergenOpZoom, flickrUrl: 'https://flic.kr/s/aHBqjCNaR6' },
