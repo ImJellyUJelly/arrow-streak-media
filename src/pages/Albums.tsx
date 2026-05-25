@@ -4,9 +4,11 @@ import ImageWithFallback from '@/components/ImageWithFallback';
 import warMuseumOverloon from '@/assets/albumCoverOorlogsmuzeum.jpg';
 import wuustwezel from '@/assets/albumCoverWuustwezel.jpg';
 import vertus from '@/assets/albumCoverVertus.jpg';
+import trier from '@/assets/albumCoverTrier.jpg';
 import albumCoverBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 
 const albums = [
+  { title: '5 Nations: Trier', image: trier, photos: 357, flickrUrl: 'https://flic.kr/s/aHBqjCUVmq' },
   { title: '5 Nations: Vertus', date: '9-10 May 2026', image: vertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
   { title: '5 Nations: Wuustwezel', date: '11-12 April 2026', image: wuustwezel, photos: 300, flickrUrl: 'https://flic.kr/s/aHBqjCQGpc' },
   { title: 'Field War Museum Overloon', date: '4-5 April 2026', photos: 298, image: warMuseumOverloon, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },

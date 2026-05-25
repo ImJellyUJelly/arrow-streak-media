@@ -6,10 +6,12 @@ import heroImg from '@/assets/heroImg.jpg';
 import veldOorlogsmuseum from '@/assets/albumCoverOorlogsmuzeum.jpg';
 import veldWuustwezel from '@/assets/albumCoverWuustwezel.jpg';
 import veldVertus from '@/assets/albumCoverVertus.jpg';
+import veldTrier from '@/assets/albumCoverTrier.jpg';
 import veldBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 
 const albums = [
-  { title: '5 Nations: Vertus',  image: veldVertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
+  { title: '5 Nations: Trier', image: veldTrier, photos: 357, flickrUrl: 'https://flic.kr/s/aHBqjCUVmq' },
+  { title: '5 Nations: Vertus', image: veldVertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
   { title: '5 Nations: Wuustwezel',  image: veldWuustwezel, photos: 300, flickrUrl: 'https://flic.kr/s/aHBqjCQGpc' },
   { title: 'Field War Museum Overloon', photos: 298, image: veldOorlogsmuseum, flickrUrl: 'https://flickr.com/photos/198763833@N05/albums/72177720332895350' },
   { title: 'Field Bergen op Zoom', photos: 226, image: veldBergenOpZoom, flickrUrl: 'https://flic.kr/s/aHBqjCNaR6' },

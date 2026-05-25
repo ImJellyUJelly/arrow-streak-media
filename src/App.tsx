@@ -26,10 +26,10 @@ const App = () => (
         <Header />
         <NotificationBanner
           type="new-album"
-          title="5 Nations: Vertus"
-          message="9-10 May 2026 — new photo album now available!"
+          title="5 Nations: Trier"
+          message="23-24 May 2026 — new photo album now available!"
           actionLabel="View Album"
-          actionHref="https://flic.kr/s/aHBqjCTrHm"
+          actionHref="https://flic.kr/s/aHBqjCUVmq"
         /> 
         <main>
           <Routes>
