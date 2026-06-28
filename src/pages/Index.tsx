@@ -8,8 +8,10 @@ import veldWuustwezel from '@/assets/albumCoverWuustwezel.jpg';
 import veldVertus from '@/assets/albumCoverVertus.jpg';
 import veldTrier from '@/assets/albumCoverTrier.jpg';
 import veldBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
+import veldAmersfoort from '@/assets/albumCoverAmersfoort.jpg';
 
 const albums = [
+  { title: 'Field Amersfoort', image: veldAmersfoort, photos: 69, flickrUrl: 'https://flic.kr/s/aHBqjCXUr8' },
   { title: '5 Nations: Trier', image: veldTrier, photos: 357, flickrUrl: 'https://flic.kr/s/aHBqjCUVmq' },
   { title: '5 Nations: Vertus', image: veldVertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
   { title: '5 Nations: Wuustwezel',  image: veldWuustwezel, photos: 300, flickrUrl: 'https://flic.kr/s/aHBqjCQGpc' },

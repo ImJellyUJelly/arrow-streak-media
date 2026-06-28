@@ -6,8 +6,10 @@ import wuustwezel from '@/assets/albumCoverWuustwezel.jpg';
 import vertus from '@/assets/albumCoverVertus.jpg';
 import trier from '@/assets/albumCoverTrier.jpg';
 import albumCoverBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
+import amersfoort from '@/assets/albumCoverAmersfoort.jpg';
 
 const albums = [
+  { title: 'Field Amersfoort', image: amersfoort, photos: 69, flickrUrl: 'https://flic.kr/s/aHBqjCXUr8' },
   { title: '5 Nations: Trier', image: trier, photos: 357, flickrUrl: 'https://flic.kr/s/aHBqjCUVmq' },
   { title: '5 Nations: Vertus', date: '9-10 May 2026', image: vertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
   { title: '5 Nations: Wuustwezel', date: '11-12 April 2026', image: wuustwezel, photos: 300, flickrUrl: 'https://flic.kr/s/aHBqjCQGpc' },
