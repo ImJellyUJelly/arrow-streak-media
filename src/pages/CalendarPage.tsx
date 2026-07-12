@@ -5,7 +5,6 @@ const events = [
   { title: 'Veld Hapert', date: 'June 13-14, 2026', location: 'Hapert, Netherlands', type: 'Field', livestream: false, tentative: false },
   { title: 'Veld Amersfoort', date: 'June 20-21, 2026', location: 'Amersfoort, Netherlands', type: 'Field', livestream: false, tentative: true },
   { title: 'Veld Haaksbergen', date: 'July 4-5, 2026', location: 'Haaksbergen, Netherlands', type: 'Field', livestream: false, tentative: false },
-  { title: '5 Nations: Sint-Oedenrode', date: 'July 11-12, 2026', location: 'Sint-Oedenrode, Netherlands', type: 'Field', livestream: true, tentative: false },
   { title: '5 Nations: Esch-sur-Alzette', date: 'Augustus 29-30, 2026', location: 'Esch-sur-Alzette, Luxembourg', type: 'Field', livestream: true, tentative: false },
 ];
 

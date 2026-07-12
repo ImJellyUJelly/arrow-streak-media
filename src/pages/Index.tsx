@@ -9,8 +9,10 @@ import veldVertus from '@/assets/albumCoverVertus.jpg';
 import veldTrier from '@/assets/albumCoverTrier.jpg';
 import veldBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 import veldAmersfoort from '@/assets/albumCoverAmersfoort.jpg';
+import veldSintOedenrode from '@/assets/albumCoverSintOedenrode.jpg';
 
 const albums = [
+  { title: '5 Nations: Sint-Oedenrode', image: veldSintOedenrode, photos: 250, flickrUrl: 'https://flic.kr/s/aHBqjCZ1p8' },
   { title: 'Field Amersfoort', image: veldAmersfoort, photos: 69, flickrUrl: 'https://flic.kr/s/aHBqjCXUr8' },
   { title: '5 Nations: Trier', image: veldTrier, photos: 357, flickrUrl: 'https://flic.kr/s/aHBqjCUVmq' },
   { title: '5 Nations: Vertus', image: veldVertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },

@@ -24,13 +24,13 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Header />
-        {/* <NotificationBanner
+        <NotificationBanner
           type="new-album"
-          title="5 Nations: Trier"
-          message="23-24 May 2026 — new photo album now available!"
+          title="5 Nations: Sint-Oedenrode"
+          message="The photos are now online!"
           actionLabel="View Album"
-          actionHref="https://flic.kr/s/aHBqjCUVmq"
-        />  */}
+          actionHref="https://flic.kr/s/aHBqjCZ1p8"
+        />
         <main>
           <Routes>
             <Route path="/" element={<Index />} />

@@ -7,8 +7,10 @@ import vertus from '@/assets/albumCoverVertus.jpg';
 import trier from '@/assets/albumCoverTrier.jpg';
 import albumCoverBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 import amersfoort from '@/assets/albumCoverAmersfoort.jpg';
+import sintOedenrode from '@/assets/albumCoverSintOedenrode.jpg';
 
 const albums = [
+  { title: '5 Nations: Sint-Oedenrode', date: '11-12 July 2026', image: sintOedenrode, photos: 250, flickrUrl: 'https://flic.kr/s/aHBqjCZ1p8' },
   { title: 'Field Amersfoort', image: amersfoort, photos: 69, flickrUrl: 'https://flic.kr/s/aHBqjCXUr8' },
   { title: '5 Nations: Trier', image: trier, photos: 357, flickrUrl: 'https://flic.kr/s/aHBqjCUVmq' },
   { title: '5 Nations: Vertus', date: '9-10 May 2026', image: vertus, photos: 369, flickrUrl: 'https://flic.kr/s/aHBqjCTrHm' },
