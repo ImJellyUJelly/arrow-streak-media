@@ -1,11 +1,9 @@
-import { Calendar as CalendarIcon, MapPin, Clock, Video, AlertTriangle } from 'lucide-react';
+import { Calendar as CalendarIcon, MapPin, Video } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 
 const events = [
-  { title: 'Veld Hapert', date: 'June 13-14, 2026', location: 'Hapert, Netherlands', type: 'Field', livestream: false, tentative: false },
-  { title: 'Veld Amersfoort', date: 'June 20-21, 2026', location: 'Amersfoort, Netherlands', type: 'Field', livestream: false, tentative: true },
-  { title: 'Veld Haaksbergen', date: 'July 4-5, 2026', location: 'Haaksbergen, Netherlands', type: 'Field', livestream: false, tentative: false },
   { title: '5 Nations: Esch-sur-Alzette', date: 'Augustus 29-30, 2026', location: 'Esch-sur-Alzette, Luxembourg', type: 'Field', livestream: true, tentative: false },
+  { title: 'World Championships Field', date: 'September 21-27, 2026', location: 'Yankton, U.S.A.', type: 'Field', livestream: false, tentative: false },
 ];
 
 const typeBadgeColors: Record<string, string> = {
@@ -90,13 +88,12 @@ const CalendarPage = () => {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-heading font-black uppercase tracking-wider text-secondary-foreground text-center mb-12">Quick View</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {events.slice(0, 3).map((event, i) => (
               <div key={i} className="bg-secondary border-2 border-primary/20 p-5 hover:border-accent transition-colors">
                 <div className="flex items-center gap-2 mb-3">
                   <span className={`badge ${typeBadgeColors[event.type]}`}>{event.type}</span>
                   {event.livestream && <Video className="w-4 h-4 text-accent" />}
-                  {event.tentative && <AlertTriangle className="w-4 h-4 text-yellow-600" />}
                 </div>
                 <h3 className="font-heading font-bold text-sm uppercase tracking-wide text-secondary-foreground mb-2">{event.title}</h3>
                 <p className="text-secondary-foreground/60 text-xs">{event.date} · {event.location}</p>

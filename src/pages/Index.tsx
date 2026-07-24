@@ -79,7 +79,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black uppercase tracking-wider text-secondary-foreground">Photo Albums</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {albums.map((a, i) => (
+            {albums.slice(0, 3).map((a, i) => (
               <a key={i} href={a.flickrUrl} target="_blank" rel="noopener noreferrer" className="group relative block">
                 <DiagonalCard accentColor="accent">
                   <div className="relative overflow-hidden">

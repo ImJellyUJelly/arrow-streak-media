@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Camera, Palette, Video, ArrowRight, Check } from 'lucide-react';
+import { Camera, Video, ArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -40,6 +40,7 @@ const services = [
     colorClass: 'text-highlight',
     bgClass: 'bg-highlight/10',
     accentClass: 'bg-highlight',
+    comingSoon: true,
     description: 'Bring your tournament to a global audience with livestream production.',
     features: [
       'Single-camera POV livestream setup',
@@ -77,8 +78,11 @@ const Services = () => {
                 {/* Icon Block */}
                 <div className="lg:w-5/12 flex justify-center">
                   <div className="relative">
-                    <div className="w-48 h-48 bg-secondary flex items-center justify-center">
-                      <Icon className={`w-20 h-20 ${service.colorClass}`} />
+                    <div className="w-48 h-48 bg-secondary flex items-center justify-center relative overflow-hidden">
+                      <Icon className={`w-20 h-20 ${service.colorClass} ${service.comingSoon ? 'blur-md opacity-50' : ''}`} />
+                      {service.comingSoon && (
+                        <span className="absolute inset-0 flex items-center justify-center bg-secondary/30 font-heading font-black uppercase tracking-wider text-accent">Coming soon</span>
+                      )}
                     </div>
                     <div className={`card-diagonal-accent -top-2 -right-2 ${service.accentClass}`} />
                     <div className={`card-diagonal-accent -bottom-2 -left-2 ${service.accentClass}`} />
@@ -87,18 +91,23 @@ const Services = () => {
 
                 {/* Content */}
                 <div className="lg:w-7/12">
-                  <div className="relative border-4 border-secondary p-8">
+                  <div className="relative border-4 border-secondary p-8 overflow-hidden">
                     <div className={`card-diagonal-accent -top-2 -right-2 ${service.accentClass}`} />
-                    <h2 className="section-heading mb-4">{service.title}</h2>
-                    <p className="text-muted-foreground text-lg mb-6">{service.description}</p>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {service.features.map((f, j) => (
-                        <li key={j} className="flex items-start gap-2 text-sm">
-                          <div className={`w-2 h-2 mt-1.5 ${service.accentClass} rotate-45 shrink-0`} />
-                          <span className="text-foreground">{f}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <div className={service.comingSoon ? 'select-none blur-md opacity-55' : ''} aria-hidden={service.comingSoon}>
+                      <h2 className="section-heading mb-4">{service.title}</h2>
+                      <p className="text-muted-foreground text-lg mb-6">{service.description}</p>
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {service.features.map((f, j) => (
+                          <li key={j} className="flex items-start gap-2 text-sm">
+                            <div className={`w-2 h-2 mt-1.5 ${service.accentClass} rotate-45 shrink-0`} />
+                            <span className="text-foreground">{f}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {service.comingSoon && (
+                      <span className="absolute inset-0 flex items-center justify-center bg-background/15 font-heading font-black uppercase tracking-wider text-secondary">Coming soon</span>
+                    )}
                   </div>
                 </div>
               </div>
