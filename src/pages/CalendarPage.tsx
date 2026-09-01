@@ -2,7 +2,6 @@ import { Calendar as CalendarIcon, MapPin, Video } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 
 const events = [
-  { title: '5 Nations: Esch-sur-Alzette', date: 'Augustus 29-30, 2026', location: 'Esch-sur-Alzette, Luxembourg', type: 'Field', livestream: true, tentative: false },
   { title: 'World Championships Field', date: 'September 21-27, 2026', location: 'Yankton, U.S.A.', type: 'Field', livestream: false, tentative: false },
 ];
 

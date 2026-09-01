@@ -8,8 +8,10 @@ import trier from '@/assets/albumCoverTrier.jpg';
 import albumCoverBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 import amersfoort from '@/assets/albumCoverAmersfoort.jpg';
 import sintOedenrode from '@/assets/albumCoverSintOedenrode.jpg';
+import eschSurAlzette from '@/assets/albumCoverEschSurAlzette.jpg';
 
 const albums = [
+  { title: '5 Nations: Esch-sur-Alzette', date: '29-30 August 2026', image: eschSurAlzette, photos: 372, flickrUrl: 'https://flic.kr/s/aHBqjD3Bdx' },
   { title: '5 Nations: Sint-Oedenrode', date: '11-12 July 2026', image: sintOedenrode, photos: 250, flickrUrl: 'https://flic.kr/s/aHBqjCZ1p8' },
   { title: 'Field Amersfoort', image: amersfoort, photos: 69, flickrUrl: 'https://flic.kr/s/aHBqjCXUr8' },
   { title: '5 Nations: Trier', image: trier, photos: 357, flickrUrl: 'https://flic.kr/s/aHBqjCUVmq' },

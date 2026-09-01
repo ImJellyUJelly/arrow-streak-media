@@ -26,10 +26,10 @@ const App = () => (
         <Header />
         <NotificationBanner
           type="new-album"
-          title="5 Nations: Sint-Oedenrode"
+          title="5 Nations: Esch-sur-Alzette"
           message="The photos are now online!"
           actionLabel="View Album"
-          actionHref="https://flic.kr/s/aHBqjCZ1p8"
+          actionHref="https://flic.kr/s/aHBqjD3Bdx"
         />
         <main>
           <Routes>
