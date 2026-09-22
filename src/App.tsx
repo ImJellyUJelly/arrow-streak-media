@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import NotificationBanner from "@/components/NotificationBanner";
+// import NotificationBanner from "@/components/NotificationBanner";
 import Index from "./pages/Index.tsx";
 import Tournaments from "./pages/Tournaments.tsx";
 import CalendarPage from "./pages/CalendarPage.tsx";
@@ -24,13 +24,13 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Header />
-        <NotificationBanner
+        {/* <NotificationBanner
           type="new-album"
           title="5 Nations: Esch-sur-Alzette"
           message="The photos are now online!"
           actionLabel="View Album"
           actionHref="https://flic.kr/s/aHBqjD3Bdx"
-        />
+        /> */}
         <main>
           <Routes>
             <Route path="/" element={<Index />} />

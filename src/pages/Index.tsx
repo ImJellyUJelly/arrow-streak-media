@@ -11,8 +11,10 @@ import veldBergenOpZoom from '@/assets/albumCoverBergenOpZoom.jpg';
 import veldAmersfoort from '@/assets/albumCoverAmersfoort.jpg';
 import veldSintOedenrode from '@/assets/albumCoverSintOedenrode.jpg';
 import veldEschSurAlzette from '@/assets/albumCoverEschSurAlzette.jpg';
+import wcFieldYankton from '@/assets/albumCoverWcFieldYankton2026.jpg';
 
 const albums = [
+  { title: 'WC Field Yankton 2026', image: wcFieldYankton, photos: 145, flickrUrl: 'https://flic.kr/ps/42DaCt' },
   { title: '5 Nations: Esch-sur-Alzette', image: veldEschSurAlzette, photos: 372, flickrUrl: 'https://flic.kr/s/aHBqjD3Bdx' },
   { title: '5 Nations: Sint-Oedenrode', image: veldSintOedenrode, photos: 250, flickrUrl: 'https://flic.kr/s/aHBqjCZ1p8' },
   { title: 'Field Amersfoort', image: veldAmersfoort, photos: 69, flickrUrl: 'https://flic.kr/s/aHBqjCXUr8' },
