@@ -12,7 +12,7 @@ import eschSurAlzette from '@/assets/albumCoverEschSurAlzette.jpg';
 import wcFieldYankton from '@/assets/albumCoverWcFieldYankton2026.jpg';
 
 const albums = [
-  { title: 'WC Field Yankton', date: '21-27 September 2026', image: wcFieldYankton, photos: 149, flickrUrl: 'https://flic.kr/ps/42DaCt' },
+  { title: 'WC Field Yankton', date: '21-27 September 2026', image: wcFieldYankton, photos: 435, flickrUrl: 'https://flic.kr/ps/42DaCt' },
   { title: '5 Nations: Esch-sur-Alzette', date: '29-30 August 2026', image: eschSurAlzette, photos: 372, flickrUrl: 'https://flic.kr/s/aHBqjD3Bdx' },
   { title: '5 Nations: Sint-Oedenrode', date: '11-12 July 2026', image: sintOedenrode, photos: 250, flickrUrl: 'https://flic.kr/s/aHBqjCZ1p8' },
   { title: 'Field Amersfoort', date: '20-21 June 2026', image: amersfoort, photos: 69, flickrUrl: 'https://flic.kr/s/aHBqjCXUr8' },
