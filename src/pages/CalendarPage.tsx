@@ -2,7 +2,8 @@ import { Calendar as CalendarIcon, MapPin, Video } from 'lucide-react';
 import DiagonalCard from '@/components/DiagonalCard';
 
 const events = [
-  { title: 'World Championships Field', date: 'September 21-27, 2026', location: 'Yankton, U.S.A.', type: 'Field', livestream: false, tentative: false },
+  { title: 'JVD Open', date: 'November 13-15, 2026', location: 'Eindhoven, Netherlands', type: 'Indoor', livestream: false, tentative: false },
+  { title: 'GT Open', date: 'November 20-22, 2026', location: 'Strassen, Luxembourg', type: 'Indoor', livestream: false, tentative: false },
 ];
 
 const typeBadgeColors: Record<string, string> = {
